@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  @apply  min-h-screen
+        bg-slate-100
+          font-["Quicksand"]
+}
+
+.header-title {
+  @apply  font-bold
+          text-xl
+          text-slate-700
+
+          sm:text-3xl
+}
+
+.btn-primary {
+  @apply  rounded-lg
+        bg-primary
+        text-white
+          text-sm
+
+          flex
+          justify-center
+          items-center
+
+          p-2
+          px-3
+
+          hover:scale-105
+          
+          sm:text-base
+          sm:p-2.5        
+          sm:px-4        
+}
+
+.userList {
+  @apply  max-w-[1920px]
+          grid
+          gap-8
+          grid-cols-[repeat(auto-fill,_280px)]
+          
+          justify-center 
+          
+          p-3
+          py-6
+          mx-auto
+  
+          sm:grid-cols-[repeat(auto-fill,_420px)]
+}
+
+  .user {
+    @apply  border-[1px]
+          border-slate-200
+          rounded-2xl
+    
+          bg-white
+
+            p-3.5
+
+            sm:text-base
+            sm:rounded-3xl
+            sm:p-5
+  }
+
+  .user-name {
+    @apply  font-bold
+            text-slate-700
+
+            border-b-[1px]
+            border-slate-300
+
+            p-2
+
+            sm:text-lg
+
+
+  }
+
+  .user-div-info {
+    @apply  text-xs
+            gap-4          
+
+            p-2
+
+            sm:text-sm
+  }
+
+    .user-h5 {
+      @apply  font-normal
+            text-slate-300
+
+              pb-2
+    }
+
+    .user-label {
+      @apply  font-light
+            text-slate-700
+              text-center
+
+    }
+
+.user-div-buttons {
+  @apply  flex
+          justify-end
+          gap-3
+
+          pr-2
+          pb-1
+
+          sm:text-2xl
+          sm:pr-3
+          sm:pb-2
+}
+
+  .user-button {
+    @apply  h-[34px]
+            w-[34px]
+            border-[1px]
+          border-white
+          text-white
+            rounded-md
+            font-bold
+            text-xl
+            
+            flex
+            justify-center
+            items-center
+            
+            sm:h-[46px]
+            sm:w-[46px]
+            sm:rounded-lg
+  }
+
+  .btn-update {
+    @apply  bg-gray-300
+
+            hover:bg-gray-400/60
+
+  }
+
+  .btn-delete {
+    @apply  bg-red-400
+
+            hover:bg-red-500
+  }
+
+.form {
+  @apply  w-[240px]
+          rounded-xl
+        bg-white
+        text-slate-700
+
+          grid
+          gap-3
+
+          relative
+          p-3
+          
+          sm:w-[360px]
+          sm:rounded-2xl
+          sm:gap-5
+          sm:p-6
+          sm:px-7
+}
+
+  .form-title {
+    @apply  font-bold
+            text-xl
+            py-2
+            
+            sm:text-2xl
+            sm:py-6
+  }
+
+  .form-div {
+    @apply  grid
+            gap-2
+          
+            sm:pt-3
+
+  }
+
+    .form-label {
+      @apply  font-bold
+              text-sm
+
+              sm:text-base
+    }
+
+    .form-input {
+      @apply  rounded-md
+            bg-gray-200
+            
+              text-sm
+
+              outline-none
+              p-2
+
+              sm:p-2.5
+              sm:text-base
+    }
